@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const HelloWorldPlugin = require('./hello-world');
 const MyPlugin = require('./my-plugin');
 
 module.exports = {
