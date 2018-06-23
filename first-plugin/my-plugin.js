@@ -63,7 +63,7 @@ MyPlugin.prototype.apply = function(compiler) {
   compiler.plugin("done", function(stats) {
     console.log('All compilers have done.');
     const fileData = fs.readFileSync(path.join(path.resolve(__dirname), 'bundle.js'), {encoding: 'utf-8'});
-    // console.log(fileData);
+    console.log(fileData);
     const prefix = '/*2018*/\n';
     const author = '\n/* ——By Beace Lee */';
     const finalFileData = `${prefix}${fileData}${author}`;
